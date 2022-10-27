@@ -37,7 +37,7 @@ export const Section = () => {
             {props.paragraph}
           </p>
         </div>
-        <span className="bg-[#9A97ED] text-sm text-white absolute py-1 px-3 rounded-full top-0 -left-5">
+        <span className="bg-[#9A97ED] text-sm text-white absolute py-1 px-3 rounded-full top-0 -left-5 shadow-md shadow-black/10">
           Featured Product
         </span>
         <div className="flex items-center justify-center w-12 h-12 ring-1 ring-black rounded-full md:absolute  left-[16rem] bottom-[13rem] z-[5]">
@@ -57,6 +57,29 @@ export const Section = () => {
               width={24}
               height={24}
               className="text-black"
+            />
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const CardJobs = (props) => {
+    return (
+      <div className="bg-white w-full md:w-[22rem] h-[5rem] rounded-3xl py-20 flex items-center relative shadow-lg shadow-black/20">
+        <div className="w-full px-6">
+          <h2 className="text-lg font-bold text-[#232340] md:text-xl">
+            {props.title}
+          </h2>
+          <span className="text-sm text-[#8B8B8B] w-full ">
+            2 years experiences
+          </span>
+          <div className="flex items-center justify-center w-8 h-8 ">
+            <Image
+              src={Assets.ArrowBlack}
+              alt="Arrow Right Black"
+              width={14}
+              height={14}
             />
           </div>
         </div>
@@ -170,7 +193,7 @@ export const Section = () => {
                 </p>
                 <button
                   style={{ transition: "0.5s" }}
-                  className="w-[8.5rem] px-2 py-[0.65rem] bg-[#5468E7] text-base rounded-md text-white font-semibold cursor-pointer hover:scale-95"
+                  className="w-full md:w-[8.5rem] px-2 py-[0.65rem] bg-[#5468E7] text-base rounded-md text-white font-semibold cursor-pointer hover:scale-95"
                 >
                   Contact Us
                 </button>
@@ -229,7 +252,7 @@ export const Section = () => {
                   className="bg-[#D1ECFD]"
                 />
                 <div style={{ transition: "0.5s" }} className="block md:hidden">
-                  <button className="w-[21rem] py-3 rounded-lg text-white bg-[#5468E7] font-sm font-bold hover:scale-95 outline-none ">
+                  <button className=" hover:scale-95 w-[20.5rem] py-3 rounded-lg text-white bg-[#5468E7] font-sm font-bold outline-none ">
                     Contact Us
                   </button>
                 </div>
@@ -247,7 +270,7 @@ export const Section = () => {
             height={1000}
           />
         </div>
-        <div className="w-full h-[190vh] bg-[#232340] py-12 md:py-20 px-6 relative overflow-hidden">
+        <div className="w-full h-[130vh] md:h-[190vh] bg-[#232340] py-12 md:py-20 px-6 relative overflow-hidden">
           <div className="absolute top-0 -left-[22rem]">
             <Image
               src={Assets.SiluetSec2}
@@ -290,10 +313,13 @@ export const Section = () => {
                       figma
                     </span>
                     <div className="flex flex-row space-x-4 items-center h-full ">
-                      <div className="flex items-center justify-center w-8 h-8 bg-[#5468E7] rounded-full">
+                      <div
+                        style={{ transition: "0.5s" }}
+                        className="flex hover:scale-95 items-center justify-center w-8 h-8 bg-[#5468E7] rounded-full"
+                      >
                         <Image
                           src={Assets.ArrowDownOutline}
-                          alt="Arrow Right"
+                          alt="Arrow Down"
                           width={10}
                           height={10}
                         />
@@ -318,7 +344,10 @@ export const Section = () => {
                     </span>
                     <div className="hidden md:block">
                       <div className="flex flex-row space-x-4 items-center h-full">
-                        <div className="flex items-center justify-center w-8 h-8 bg-[#5468E7] rounded-full">
+                        <div
+                          style={{ transition: "0.5s" }}
+                          className="flex hover:scale-95 items-center justify-center w-8 h-8 bg-[#5468E7] rounded-full"
+                        >
                           <Image
                             src={Assets.ArrowDownOutline}
                             alt="Arrow Right"
@@ -336,7 +365,10 @@ export const Section = () => {
             <div className="flex justify-between px-2">
               <div className="flex flex-row space-x-8">
                 <div className="md:hidden block">
-                  <div className="flex items-center justify-center ">
+                  <div
+                    style={{ transition: "0.5s" }}
+                    className="flex hover:scale-95 items-center justify-center w-12 h-12  rounded-full md:absolute md:right-4 md:-bottom-[26rem]"
+                  >
                     <Image
                       src={Assets.ArrowLeft}
                       alt="Arrow Left"
@@ -345,7 +377,10 @@ export const Section = () => {
                     />
                   </div>
                 </div>
-                <div className="flex items-center justify-center w-12 h-12 bg-[#5468E7] rounded-full md:absolute md:right-4 md:-bottom-[26rem]">
+                <div
+                  style={{ transition: "0.5s" }}
+                  className="flex hover:scale-95 items-center justify-center w-12 h-12 bg-[#5468E7] rounded-full md:absolute md:right-4 md:-bottom-[26rem]"
+                >
                   <Image
                     src={Assets.ArrowRight}
                     alt="Arrow Right"
@@ -357,18 +392,153 @@ export const Section = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen bg-white relative">
+        <div className="w-full py-20 bg-white relative hidden md:block">
           <div className="md:w-[50rem] w-[30rem] h-full hidden md:block md:absolute md:left-[15rem] md:-top-[28rem] -left-[2.5rem] z-20">
             <Image src={Assets.Agency} alt="Assets Hero 2" />
           </div>
           <div className="hidden md:block">
-            <div className="flex items-center justify-center w-12 h-12 bg-[#5468E7] rounded-full md:absolute md:left-[8.75rem] md:-top-[9rem]">
+            <div
+              style={{ transition: "0.5s" }}
+              className="flex hover:scale-95 items-center justify-center w-12 h-12 bg-[#5468E7] rounded-full md:absolute md:left-[8.75rem] md:-top-[9rem]"
+            >
               <Image
                 src={Assets.ArrowLeft}
                 alt="Arrow Left"
                 width={24}
                 height={24}
               />
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-[140vh] py-12 md:py-[10rem] relative overflow-hidden">
+          <div className="absolute top-0 -right-[12rem] md:top-[5.5rem] md:left-[24.5rem]">
+            <Image
+              src={Assets.SiluetJobs}
+              alt="Siluet Jobs"
+              width={400}
+              height={400}
+            />
+          </div>
+          <div className="relative max-w-5xl mx-auto px-6 md:px-2 flex flex-col md:space-y-0 space-y-[3rem] z-[20]">
+            <div className="flex flex-col md:flex-row">
+              <div className="flex space-y-10 md:space-y-0 flex-col md:flex-row space-x-0 md:space-x-[9.5rem]">
+                <div className="hidden md:block">
+                  <Image src={Assets.Folio} alt="Logo Folio" />
+                </div>
+                <div className="flex flex-col space-y-[2rem] md:space-y-[4rem]">
+                  <div className="flex flex-col space-y-4">
+                    <div className="flex flex-row space-x-4">
+                      <span className="text-sm text-[#5468E7]">04</span>
+                      <span className="text-sm text-[#5468E7]">
+                        We are hiring
+                      </span>
+                    </div>
+                    <h2 className="text-5xl md:text-6xl font-bold text-[#232340] w-full md:w-[75%] z-20">
+                      Jobs.
+                    </h2>
+                    <p className="text-base text-[#606060] w-full">
+                      Agency is full-service agency busy designing and building
+                      autiful digital products, brands, and experiences.
+                    </p>
+                    <div className="md:block hidden">
+                      <div className="flex flex-row space-x-4 items-center h-full ">
+                        <div
+                          style={{ transition: "0.5s" }}
+                          className="hover:scale-95 flex items-center justify-center w-8 h-8 bg-[#C897E4] rounded-full"
+                        >
+                          <Image
+                            src={Assets.ArrowRightOutline}
+                            alt="Arrow Right"
+                            width={14}
+                            height={14}
+                          />
+                        </div>
+                        <span className="text-[#606060] text-sm ">
+                          Available Jobs
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col space-y-4">
+                  <div className="bg-white w-full md:w-[22rem] h-[5rem] rounded-3xl py-20 flex items-center relative shadow-lg shadow-black/20">
+                    <div className="w-full px-6">
+                      <div className="flex flex-row items-center space-x-4">
+                        <h2 className="text-lg font-bold text-[#232340] md:text-xl">
+                          Visual Designer
+                        </h2>
+                        <span className="w-6 h-6 flex items-center justify-center text-white text-sm rounded-full bg-gradient-to-t from-[#0837AE] to-[#3A8FFF]">
+                          2
+                        </span>
+                      </div>
+                      <span className="text-sm text-[#8B8B8B] w-full ">
+                        2 years experiences
+                      </span>
+                      <div className="flex items-center justify-center w-8 h-8 ">
+                        <Image
+                          src={Assets.ArrowBlack}
+                          alt="Arrow Right Black"
+                          width={14}
+                          height={14}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#232340] w-full md:w-[22rem] h-[5rem] rounded-3xl py-20 flex items-center relative shadow-lg shadow-[#232340]/40">
+                    <div className="w-full px-6">
+                      <h2 className="text-lg font-bold text-white md:text-xl">
+                        Visual Designer
+                      </h2>
+                      <span className="text-sm text-[#8B8B8B] w-full ">
+                        2 years experiences
+                      </span>
+                      <div className="flex items-center justify-center w-8 h-8 ">
+                        <Image
+                          src={Assets.ArrowRight}
+                          alt="Arrow Right"
+                          width={14}
+                          height={14}
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style={{ transition: "0.5s" }}
+                      className="hover:scale-95 flex items-center absolute right-4 md:right-2 justify-center w-32 h-32 md:w-36 md:h-36 bg-[#5468E7] rounded-3xl"
+                    >
+                      <Image
+                        src={Assets.Work1}
+                        alt="Arrow Right"
+                        width={500}
+                        height={500}
+                      />
+                    </div>
+                  </div>
+                  <CardJobs title="Art Director" />
+                  <div className="bg-white w-full md:w-[22rem] h-[5rem] rounded-3xl py-20 flex items-center relative shadow-lg shadow-black/20">
+                    <div className="w-full px-6">
+                      <div className="flex flex-row items-center space-x-4">
+                        <h2 className="text-lg font-bold text-[#232340] md:text-xl">
+                          Web Designer
+                        </h2>
+                        <span className="w-6 h-6 flex items-center justify-center text-white text-sm rounded-full bg-gradient-to-t from-[#0837AE] to-[#3A8FFF]">
+                          6
+                        </span>
+                      </div>
+                      <span className="text-sm text-[#8B8B8B] w-full ">
+                        2 years experiences
+                      </span>
+                      <div className="flex items-center justify-center w-8 h-8 ">
+                        <Image
+                          src={Assets.ArrowBlack}
+                          alt="Arrow Right Black"
+                          width={14}
+                          height={14}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
