@@ -649,7 +649,7 @@ export const Section = () => {
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="flex justify-between rounded-lg bg-white ring-1 ring-[#232340] text-sm w-[20rem] px-4 py-2">
+                        <Disclosure.Button className="flex justify-between rounded-lg bg-white ring-1 ring-[#8B8B8B] text-sm w-[20rem] px-4 py-2">
                           <span>Home</span>
                           <ChevronUpIcon
                             className={`${
@@ -659,33 +659,33 @@ export const Section = () => {
                         </Disclosure.Button>
                         <Disclosure.Panel
                           style={{ transition: "0.5s" }}
-                          className=" text-base  w-[20rem] bg-white rounded-lg ring-1 ring-[#232340] px-4 py-6 mt-4"
+                          className=" text-base  w-[20rem] bg-white rounded-lg ring-1 ring-[#8B8B8B] px-4 py-6 mt-4"
                         >
                           <ul className="items-center flex-col space-y-4 md:flex">
                             <li>
                               <Link href="# ">
-                                <span className="w-full py-3 text-base transition  text-[#232340">
+                                <span className="w-full py-3 text-base transition  text-[#8B8B8B]">
                                   About
                                 </span>
                               </Link>
                             </li>
                             <li>
                               <Link href="# ">
-                                <span className="w-full py-3 text-base transition  text-[#232340">
+                                <span className="w-full py-3 text-base transition  text-[#8B8B8B]">
                                   Work
                                 </span>
                               </Link>
                             </li>
                             <li>
                               <Link href="# ">
-                                <span className="w-full py-3 text-base transition  text-[#232340">
+                                <span className="w-full py-3 text-base transition  text-[#8B8B8B]">
                                   Services
                                 </span>
                               </Link>
                             </li>
                             <li>
                               <Link href="# ">
-                                <span className="w-full py-3 text-base transition  text-[#232340">
+                                <span className="w-full py-3 text-base transition  text-[#8B8B8B]">
                                   Jobs
                                 </span>
                               </Link>
@@ -727,6 +727,50 @@ export const Section = () => {
                   </Link>
                 </li>
               </ul>
+            </div>
+            <hr className="border-b-[0.1rem] border-b-[#606060] w-[80rem] md:block hidden" />
+            <div className="flex justify-center flex-col-reverse md:flex-row items-center w-full py-4 md:py-0">
+              <span className="w-full py-8 md:py-0 text-sm text-black text-center md:text-left">
+                2020, U8 LLC
+              </span>
+              <div className="w-full flex flex-row space-x-4 items-center justify-center">
+                <span className="w-full py-3 text-end text-sm text-[#5468E7] md:block hidden">
+                  Follow Us
+                </span>
+                <div
+                  style={{ transition: "0.5s" }}
+                  className="flex items-center justify-center w-12 h-12 border-[0.1rem] md:border-none border-[#8B8B8B] rounded-full hover:scale-95"
+                >
+                  <Image
+                    src={Assets.Facebook}
+                    alt="Facebook"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div
+                  style={{ transition: "0.5s" }}
+                  className="flex items-center justify-center w-12 h-12 border-[0.1rem] md:border-none border-[#8B8B8B] rounded-full hover:scale-95"
+                >
+                  <Image
+                    src={Assets.Youtube}
+                    alt="Youtube"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div
+                  style={{ transition: "0.5s" }}
+                  className="flex items-center justify-center w-12 h-12 border-[0.1rem] md:border-none border-[#8B8B8B] rounded-full hover:scale-95"
+                >
+                  <Image
+                    src={Assets.Instagram}
+                    alt="Instagram"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

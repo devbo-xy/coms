@@ -26,3 +26,6 @@ export { default as ArrowRightOutline } from "./arrowOutline.svg";
 export { default as FolioPurple } from "./logoFolioPurple.png";
 export { default as Hello } from "./emotHello.png";
 export { default as Chat } from "./imgChat.png";
+export { default as Facebook } from "./logoFacebook.png";
+export { default as Instagram } from "./logoInstagram.png";
+export { default as Youtube } from "./logoYoutube.png";
