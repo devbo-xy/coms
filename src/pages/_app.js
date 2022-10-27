@@ -1,3 +1,5 @@
+import { Navbar } from "components/organism";
+
 if (process.env.NODE_ENV !== "production") {
   require("../assets/styles/globals.css");
 } else {
@@ -5,7 +7,12 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Navbar />
+      <Component {...pageProps} />;
+    </>
+  );
 }
 
 export default MyApp;

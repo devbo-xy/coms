@@ -23,7 +23,7 @@ export const Section = () => {
     return (
       <div className="flex flex-col space-y-[2rem] justify-evenly">
         <div
-          className={`w-[21rem] md:w-[17.5rem] h-[23rem] rounded-2xl flex items-center justify-center relative ${props.className}`}
+          className={`w-[20.5rem] md:w-[17.5rem] h-[23rem] rounded-2xl flex items-center justify-center relative ${props.className}`}
         >
           <div className="flex items-center justify-center w-[24rem] absolute h-full">
             <Image src={props.src} alt={props.alt} />
@@ -92,7 +92,7 @@ export const Section = () => {
                 <span className="text-sm text-[#8B8B8B]">01</span>
                 <span className="text-sm text-white">Who We Are</span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-bold text-white w-full md:w-[75%] z-20">
+              <h2 className="text-5xl md:text-6xl font-bold text-white w-full md:w-[75%] z-20">
                 We Make Designs that Lead and Inspire.
               </h2>
             </div>
@@ -189,7 +189,7 @@ export const Section = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[200vh] md:h-[130vh] bg-white py-12 md:py-20 px-6">
+      <div className="w-full h-[200vh] md:h-[130vh] bg-white py-12 md:py-20 px-6 relative overflow-hidden">
         <div className="relative max-w-5xl mx-auto flex flex-col md:space-y-0 space-y-[3rem]">
           <div className="flex flex-row space-x-0 md:space-x-[9.5rem]">
             <div className="hidden md:block">
@@ -203,7 +203,7 @@ export const Section = () => {
                     You May Also Like
                   </span>
                 </div>
-                <h2 className="text-4xl md:text-6xl font-bold text-[#232340] w-full md:w-[75%] z-20">
+                <h2 className="text-5xl md:text-6xl font-bold text-[#232340] w-[24rem] md:w-[75%] z-20">
                   Recent Works.
                 </h2>
                 <p className="text-base text-[#606060] w-full md:w-[60%]">
@@ -229,7 +229,7 @@ export const Section = () => {
                   className="bg-[#D1ECFD]"
                 />
                 <div style={{ transition: "0.5s" }} className="block md:hidden">
-                  <button className="w-full py-3 rounded-lg text-white bg-[#5468E7] font-sm font-bold hover:scale-95 outline-none ">
+                  <button className="w-[21rem] py-3 rounded-lg text-white bg-[#5468E7] font-sm font-bold hover:scale-95 outline-none ">
                     Contact Us
                   </button>
                 </div>
@@ -247,7 +247,7 @@ export const Section = () => {
             height={1000}
           />
         </div>
-        <div className="w-full h-[190vh] bg-[#232340] py-12 md:py-20 px-6 relative overflow-hidden ">
+        <div className="w-full h-[190vh] bg-[#232340] py-12 md:py-20 px-6 relative overflow-hidden">
           <div className="absolute top-0 -left-[22rem]">
             <Image
               src={Assets.SiluetSec2}
@@ -266,22 +266,86 @@ export const Section = () => {
                   <span className="text-sm text-[#8B8B8B]">03</span>
                   <span className="text-sm text-white">Folio Agency</span>
                 </div>
-                <h2 className="text-4xl md:text-6xl font-bold text-white w-full z-20">
+                <h2 className="text-5xl md:text-6xl font-bold text-white w-full z-20">
                   By the Numbers.
                 </h2>
               </div>
             </div>
-            <div className="flex justify-between px-2 md:hidden">
-              <div className="flex flex-row space-x-8">
-                <div className="flex items-center justify-center">
-                  <Image
-                    src={Assets.ArrowLeft}
-                    alt="Arrow Left"
-                    width={24}
-                    height={24}
-                  />
+            <div className="flex w-full z-[20] md:py-20 md:pl-44">
+              <div className="flex justify-center items-center max-w-5xl mx-auto">
+                <div className="flex flex-col-reverse md:flex-row">
+                  <div className="flex flex-col space-y-10 justify-center md:relative top-[8rem]">
+                    <div className=" flex flex-col  -space-y-8 md:-space-y-4 -top-3 md:-top-5">
+                      <span className="text-[7.5rem] md:text-[9rem] font-bold text-white">
+                        20
+                      </span>
+                      <span className="text-lg font-bold text-white md:text-xl">
+                        Pre-Build Scenes
+                      </span>
+                    </div>
+                    <hr className="border-t-[0.1rem] border-t-[#606060] w-[11rem]" />
+                    <span className="text-sm text-[#606060] w-full md:w-[50%]">
+                      Bento is the first full editable, 3D visual design system
+                      with global aut-updatable style guides built right in
+                      figma
+                    </span>
+                    <div className="flex flex-row space-x-4 items-center h-full ">
+                      <div className="flex items-center justify-center w-8 h-8 bg-[#5468E7] rounded-full">
+                        <Image
+                          src={Assets.ArrowDownOutline}
+                          alt="Arrow Right"
+                          width={10}
+                          height={10}
+                        />
+                      </div>
+                      <span className="text-white text-sm ">Download</span>
+                    </div>
+                  </div>
+                  <div className="flex flex-col space-y-10">
+                    <div className="flex flex-col  -space-y-8 md:-space-y-4 -top-3 md:-top-5">
+                      <span className="text-[7.5rem] md:text-[9rem] font-bold text-white">
+                        40
+                      </span>
+                      <span className="text-lg font-bold text-white md:text-xl">
+                        Scenes Obect
+                      </span>
+                    </div>
+                    <hr className="border-t-[0.1rem] border-t-[#606060] w-[11rem]" />
+                    <span className="text-sm text-[#606060] w-full md:w-[50%]">
+                      Bento is the first full editable, 3D visual design system
+                      with global aut-updatable style guides built right in
+                      figma
+                    </span>
+                    <div className="hidden md:block">
+                      <div className="flex flex-row space-x-4 items-center h-full">
+                        <div className="flex items-center justify-center w-8 h-8 bg-[#5468E7] rounded-full">
+                          <Image
+                            src={Assets.ArrowDownOutline}
+                            alt="Arrow Right"
+                            width={10}
+                            height={10}
+                          />
+                        </div>
+                        <span className="text-white text-sm ">Download</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center justify-center w-12 h-12 bg-[#5468E7] rounded-full">
+              </div>
+            </div>
+            <div className="flex justify-between px-2">
+              <div className="flex flex-row space-x-8">
+                <div className="md:hidden block">
+                  <div className="flex items-center justify-center ">
+                    <Image
+                      src={Assets.ArrowLeft}
+                      alt="Arrow Left"
+                      width={24}
+                      height={24}
+                    />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center w-12 h-12 bg-[#5468E7] rounded-full md:absolute md:right-4 md:-bottom-[26rem]">
                   <Image
                     src={Assets.ArrowRight}
                     alt="Arrow Right"
@@ -290,22 +354,21 @@ export const Section = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-row space-x-[5rem]">
-                <span className="flex items-center justify-center text-base font-bold text-white">
-                  2022
-                </span>
-                <div className="flex items-center justify-center">
-                  <Image
-                    src={Assets.ArrowDown}
-                    alt="Arrow Down"
-                    width={12}
-                    height={12}
-                  />
-                </div>
-              </div>
             </div>
-            <div className="md:w-[54rem] w-[30rem] h-full flex items-center relative md:left-[5rem] md:top-[6rem] -left-[2.5rem] z-20">
-              <Image src={Assets.Agency} alt="Assets Hero 2" />
+          </div>
+        </div>
+        <div className="w-full h-screen bg-white relative">
+          <div className="md:w-[50rem] w-[30rem] h-full hidden md:block md:absolute md:left-[15rem] md:-top-[28rem] -left-[2.5rem] z-20">
+            <Image src={Assets.Agency} alt="Assets Hero 2" />
+          </div>
+          <div className="hidden md:block">
+            <div className="flex items-center justify-center w-12 h-12 bg-[#5468E7] rounded-full md:absolute md:left-[8.75rem] md:-top-[9rem]">
+              <Image
+                src={Assets.ArrowLeft}
+                alt="Arrow Left"
+                width={24}
+                height={24}
+              />
             </div>
           </div>
         </div>

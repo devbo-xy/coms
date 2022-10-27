@@ -19,3 +19,5 @@ export { default as Background } from "./assetSec.svg";
 export { default as Work1 } from "./imgWorks1.svg";
 export { default as Work2 } from "./imgWorks2.svg";
 export { default as Agency } from "./imgAgency.png";
+export { default as HorizonLine } from "./horizonLine.svg";
+export { default as ArrowDownOutline } from "./arrowOutlineDown.svg";
