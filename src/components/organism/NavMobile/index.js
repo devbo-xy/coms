@@ -1,11 +1,9 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import { Assets } from "assets";
 import Image from "next/image";
 
 export const NavMobile = (props) => {
-  const [showOptions, setShowOptions] = useState(false);
-
   return (
     <div
       style={{ transition: "0.5s" }}

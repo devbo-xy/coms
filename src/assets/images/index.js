@@ -23,3 +23,6 @@ export { default as Agency } from "./imgAgency.png";
 export { default as HorizonLine } from "./horizonLine.svg";
 export { default as ArrowDownOutline } from "./arrowOutlineDown.svg";
 export { default as ArrowRightOutline } from "./arrowOutline.svg";
+export { default as FolioPurple } from "./logoFolioPurple.png";
+export { default as Hello } from "./emotHello.png";
+export { default as Chat } from "./imgChat.png";

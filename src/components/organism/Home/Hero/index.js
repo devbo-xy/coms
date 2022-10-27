@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className="relative flex w-full h-screen max-w-5xl mx-auto bg-white">
         <div className="absolute w-full px-6 py-20 overflow-hidden md:relative md:px-0">
           <div className="flex flex-col justify-center h-full space-y-10">
-            <h2 className="text-[#232340] text-5xl md:text-6xl font-bold md:w-full z-[10] font-bold">
+            <h2 className="text-[#232340] text-5xl md:text-6xl  md:w-full z-[10] font-bold">
               Stand Out from The Crowd.
             </h2>
             <p className="text-[#606060] text-base md:text-lg text-left w-full z-[10]">

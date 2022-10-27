@@ -355,7 +355,7 @@ export const Section = () => {
                             height={10}
                           />
                         </div>
-                        <span className="text-white text-sm ">Download</span>
+                        <span className="text-white text-sm">Download</span>
                       </div>
                     </div>
                   </div>
@@ -533,6 +533,75 @@ export const Section = () => {
                           alt="Arrow Right Black"
                           width={14}
                           height={14}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-full md:h-[100vh]  flex justify-center items-center bg-white">
+          <div className=" w-[20.5rem] h-[40rem] md:w-[70rem] md:h-[40rem] bg-[#5468E7] rounded-3xl flex justify-center relative overflow-hidden ">
+            <div className="absolute top-0 -right-[14rem] md:top-0 md:left-[13rem]">
+              <Image
+                src={Assets.SiluetJobs}
+                alt="Siluet Jobs"
+                width={500}
+                height={500}
+              />
+            </div>
+            <div className="flex-col flex px-8 z-[20]">
+              <div className="flex flex-col space-y-8 items-center border-b-[0.1rem] border-b-white h-[20rem] md:w-[70rem] md:h-[20rem] py-12 md:py-20">
+                <div className="hidden md:block">
+                  <Image src={Assets.FolioPurple} alt="Logo Folio Purple" />
+                </div>
+                <div className="flex flex-row items-center space-x-4">
+                  <div className="hidden md:block">
+                    <Image src={Assets.Hello} alt="Logo Emot Hello" />
+                  </div>
+                  <span className="text-base text-white">Say Hello</span>
+                </div>
+                <h2 className="text-base md:text-2xl font-bold text-white w-[40%] md:w-[40%] text-center">
+                  A design team building a curated marketplace for UI designers.
+                </h2>
+              </div>
+              <div className="flex flex-row">
+                <div className="w-[35rem] h-[20rem] border-r-[0.1rem] border-b-white flex flex-col space-y-6 items-center justify-center">
+                  <h2 className="text-3xl md:text-5xl font-bold text-white w-[45%] md:w-[60%] text-center">
+                    Lets talk about your next project
+                  </h2>
+                  <button
+                    style={{ transition: "0.5s" }}
+                    className="w-[16rem] md:hidden block px-2 py-[0.65rem] bg-white text-base rounded-md text-[#5468E7] font-semibold cursor-pointer hover:scale-95"
+                  >
+                    Contact Us
+                  </button>
+                </div>
+                <div className="md:block hidden">
+                  <div className="flex-col space-y-8 flex justify-center py-[5rem] w-[35rem] ">
+                    <div className="flex items-start ml-[4.8rem]">
+                      <Image
+                        src={Assets.Chat}
+                        alt="Image Chat"
+                        width={50}
+                        height={50}
+                      />
+                    </div>
+                    <div className="flex-row flex items-center justify-evenly w-full">
+                      <h2 className="text-2xl font-bold text-white w-full md:w-[50%]">
+                        Invest in your designs today!
+                      </h2>
+                      <div
+                        style={{ transition: "0.5s" }}
+                        className="flex items-center justify-center w-12 h-12 border-[0.1rem] border-white rounded-full hover:scale-95"
+                      >
+                        <Image
+                          src={Assets.ArrowRight}
+                          alt="Arrow Right"
+                          width={24}
+                          height={24}
                         />
                       </div>
                     </div>
