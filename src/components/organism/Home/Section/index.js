@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { Assets } from "assets";
+import Link from "next/link";
+import { Disclosure } from "@headlessui/react";
+import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
 export const Section = () => {
   const Point = (props) => {
@@ -216,7 +219,12 @@ export const Section = () => {
         <div className="relative max-w-5xl mx-auto flex flex-col md:space-y-0 space-y-[3rem]">
           <div className="flex flex-row space-x-0 md:space-x-[9.5rem]">
             <div className="hidden md:block">
-              <Image src={Assets.Folio} alt="Logo Folio" />
+              <Image
+                src={Assets.Folio}
+                alt="Logo Folio"
+                width={35}
+                height={35}
+              />
             </div>
             <div className="flex flex-col space-y-[2rem] md:space-y-[4rem]">
               <div className="flex flex-col space-y-4">
@@ -423,7 +431,12 @@ export const Section = () => {
             <div className="flex flex-col md:flex-row">
               <div className="flex space-y-10 md:space-y-0 flex-col md:flex-row space-x-0 md:space-x-[9.5rem]">
                 <div className="hidden md:block">
-                  <Image src={Assets.Folio} alt="Logo Folio" />
+                  <Image
+                    src={Assets.Folio}
+                    alt="Logo Folio"
+                    width={45}
+                    height={45}
+                  />
                 </div>
                 <div className="flex flex-col space-y-[2rem] md:space-y-[4rem]">
                   <div className="flex flex-col space-y-4">
@@ -438,7 +451,7 @@ export const Section = () => {
                     </h2>
                     <p className="text-base text-[#606060] w-full">
                       Agency is full-service agency busy designing and building
-                      autiful digital products, brands, and experiences.
+                      beautiful digital products, brands, and experiences.
                     </p>
                     <div className="md:block hidden">
                       <div className="flex flex-row space-x-4 items-center h-full ">
@@ -608,6 +621,112 @@ export const Section = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-5xl mx-auto w-full py-20 relative overflow-hidden">
+          <div className="absolute top-0 -left-[3rem]  md:hidden">
+            <Image
+              src={Assets.SiluetJobs}
+              alt="Siluet Jobs"
+              width={400}
+              height={400}
+            />
+          </div>
+          <div className="flex items-center justify-center flex-col space-y-8">
+            <Link href="# ">
+              <div className="relative w-[8rem] h-full flex justify-center items-center">
+                <Image src={Assets.FolioDark} alt="Logo Folio Dark" />
+              </div>
+            </Link>
+            <p className="text-base text-[#606060] text-center w-[80%] md:w-[50%]">
+              Agency is full-service agency busy designing and building
+              beautiful digital products, brands, and experiences.
+            </p>
+            <div className="flex flex-row">
+              <div className="w-full block md:hidden z-[20]">
+                <div className="mx-auto w-full  rounded-2xl bg-white">
+                  <Disclosure>
+                    {({ open }) => (
+                      <>
+                        <Disclosure.Button className="flex justify-between rounded-lg bg-white ring-1 ring-[#232340] text-sm w-[20rem] px-4 py-2">
+                          <span>Home</span>
+                          <ChevronUpIcon
+                            className={`${
+                              open ? "rotate-180 transform" : ""
+                            } h-5 w-5 text-black`}
+                          />
+                        </Disclosure.Button>
+                        <Disclosure.Panel
+                          style={{ transition: "0.5s" }}
+                          className=" text-base  w-[20rem] bg-white rounded-lg ring-1 ring-[#232340] px-4 py-6 mt-4"
+                        >
+                          <ul className="items-center flex-col space-y-4 md:flex">
+                            <li>
+                              <Link href="# ">
+                                <span className="w-full py-3 text-base transition  text-[#232340">
+                                  About
+                                </span>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="# ">
+                                <span className="w-full py-3 text-base transition  text-[#232340">
+                                  Work
+                                </span>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="# ">
+                                <span className="w-full py-3 text-base transition  text-[#232340">
+                                  Services
+                                </span>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="# ">
+                                <span className="w-full py-3 text-base transition  text-[#232340">
+                                  Jobs
+                                </span>
+                              </Link>
+                            </li>
+                          </ul>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
+                </div>
+              </div>
+              <ul className="items-center hidden space-x-14 md:flex">
+                <li>
+                  <Link href="# ">
+                    <span className="w-full py-3 text-base  transition  text-[#5468E7]">
+                      About
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="# ">
+                    <span className="flex flex-row items-center justify-center w-full py-3 text-base text-[#8B8B8B]  transition  hover:text-[#5468E7]">
+                      Work
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="# ">
+                    <span className="flex flex-row items-center justify-center w-full py-3 text-base text-[#8B8B8B]  transition  hover:text-[#5468E7]">
+                      Services
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="# ">
+                    <span className="w-full py-3 text-base text-[#8B8B8B] transition  hover:text-[#5468E7]">
+                      Jobs
+                    </span>
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

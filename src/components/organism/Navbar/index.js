@@ -29,40 +29,39 @@ export const Navbar = () => {
                   <ul className="items-center hidden space-x-14 md:flex">
                     <li>
                       <Link href="# ">
-                        <span className="w-full py-3 text-base font-bold text-[#8B8B8B]  transition  hover:text-[#5468E7]">
+                        <span className="w-full py-3 text-base font-semibold transition  text-[#5468E7]">
                           About
                         </span>
                       </Link>
                     </li>
                     <li>
                       <Link href="# ">
-                        <span className="flex flex-row items-center justify-center w-full py-3 text-base text-[#8B8B8B]  transition  hover:text-[#5468E7] font-bold">
+                        <span className="flex flex-row items-center justify-center w-full py-3 text-base text-[#8B8B8B]  transition  hover:text-[#5468E7] font-semibold">
                           Work
                         </span>
                       </Link>
                     </li>
                     <li>
                       <Link href="# ">
-                        <span className="flex flex-row items-center justify-center w-full py-3 text-base text-[#8B8B8B]  transition  hover:text-[#5468E7] font-bold">
+                        <span className="flex flex-row items-center justify-center w-full py-3 text-base text-[#8B8B8B]  transition  hover:text-[#5468E7] font-semibold">
                           Services
                         </span>
                       </Link>
                     </li>
                     <li>
                       <Link href="# ">
-                        <span className="w-full py-3 text-base text-[#8B8B8B] transition  hover:text-[#5468E7] font-bold">
+                        <span className="w-full py-3 text-base text-[#8B8B8B] transition  hover:text-[#5468E7] font-semibold">
                           Jobs
                         </span>
                       </Link>
                     </li>
                   </ul>
                 </div>
-                <div className="hidden md:block">
-                  <button className="w-[8rem] py-[1rem] rounded-md text-white bg-[#232340] uppercase font-body text-xs font-bold hover:scale-95 outline-none">
+                <div style={{ transition: "0.5s" }} className="hidden md:block">
+                  <button className="w-[8rem] py-[1rem] rounded-md text-white bg-[#232340] uppercase font-body text-xs font-semibold hover:scale-95 outline-none">
                     Contact Us
                   </button>
                 </div>
-
                 <button
                   type="button"
                   className="block md:hidden "
